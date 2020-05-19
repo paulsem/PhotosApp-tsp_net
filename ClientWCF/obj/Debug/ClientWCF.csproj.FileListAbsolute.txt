@@ -1,0 +1,13 @@
+C:\Users\Paul\source\repos\PhotosApp\ClientWCF\bin\Debug\ClientWCF.exe.config
+C:\Users\Paul\source\repos\PhotosApp\ClientWCF\bin\Debug\ClientWCF.exe
+C:\Users\Paul\source\repos\PhotosApp\ClientWCF\bin\Debug\ClientWCF.pdb
+C:\Users\Paul\source\repos\PhotosApp\ClientWCF\bin\Debug\System.ServiceModel.Primitives.dll
+C:\Users\Paul\source\repos\PhotosApp\ClientWCF\bin\Debug\System.ServiceModel.Primitives.pdb
+C:\Users\Paul\source\repos\PhotosApp\ClientWCF\obj\Debug\ClientWCF.csprojAssemblyReference.cache
+C:\Users\Paul\source\repos\PhotosApp\ClientWCF\obj\Debug\ClientWCF.Properties.Resources.resources
+C:\Users\Paul\source\repos\PhotosApp\ClientWCF\obj\Debug\ClientWCF.csproj.GenerateResource.cache
+C:\Users\Paul\source\repos\PhotosApp\ClientWCF\obj\Debug\ClientWCF.csproj.CoreCompileInputs.cache
+C:\Users\Paul\source\repos\PhotosApp\ClientWCF\obj\Debug\ClientWCF.csproj.CopyComplete
+C:\Users\Paul\source\repos\PhotosApp\ClientWCF\obj\Debug\ClientWCF.exe
+C:\Users\Paul\source\repos\PhotosApp\ClientWCF\obj\Debug\ClientWCF.pdb
+C:\Users\Paul\source\repos\PhotosApp\ClientWCF\obj\Debug\WindowsFormsApp1.Form1.resources

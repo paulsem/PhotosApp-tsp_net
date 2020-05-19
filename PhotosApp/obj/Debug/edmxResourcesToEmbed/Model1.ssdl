@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Alias="Self" Namespace="Model1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="Photos" EntityType="Model1.Store.Photos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="People" EntityType="Model1.Store.People" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="PhotoPerson" Association="Model1.Store.PhotoPerson">
+      <End EntitySet="Photos" Role="Photo" />
+      <End EntitySet="People" Role="Person" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Photos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Path" Nullable="false" Type="nvarchar(max)" />
+    <Property Name="Locatie" Nullable="false" Type="nvarchar(max)" />
+    <Property Name="Anotimp" Nullable="false" Type="nvarchar(max)" />
+    <Property Name="Data" Nullable="false" Type="datetime" />
+  </EntityType>
+  <EntityType Name="People">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Nume" Nullable="false" Type="nvarchar(max)" />
+    <Property Name="PhotoId" Nullable="false" Type="int" />
+  </EntityType>
+  <Association Name="PhotoPerson">
+    <End Type="Model1.Store.Photos" Multiplicity="1" Role="Photo" />
+    <End Type="Model1.Store.People" Multiplicity="*" Role="Person" />
+    <ReferentialConstraint>
+      <Principal Role="Photo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="PhotoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
