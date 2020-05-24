@@ -19,6 +19,7 @@ namespace WebApplication1.Pages
         [BindProperty(SupportsGet = true)]
         public string SearchString { get; set; }
 
+        public static int aparitii { get; set; }
         public List<DetailsDTO> Details { get; set; }
 
         public ShowDataModel()
@@ -32,6 +33,7 @@ namespace WebApplication1.Pages
             var posts = await pcc.getAllDetailsAsync();
             int ok = 1;
             DetailsDTO pd = new DetailsDTO();
+            aparitii = posts.Count / 5;
             foreach (var item in posts)
             {
                 //Console.WriteLine(item);
@@ -65,7 +67,6 @@ namespace WebApplication1.Pages
                         ok = 0;
                         aux1 = item;
                     }
-                    
                     pd = new DetailsDTO();
                 }
                 ok++;
@@ -78,6 +79,7 @@ namespace WebApplication1.Pages
                 ok = 1;
                 pd = new DetailsDTO();
                 var search_result = await pcc.getPathsAsync(SearchString);
+                aparitii = search_result.Count;
                 //Console.WriteLine(search_result.Count);
                 foreach (var item in search_result)
                 {

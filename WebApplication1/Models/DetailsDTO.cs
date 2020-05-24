@@ -33,5 +33,8 @@ namespace WebApplication1.Models
 
         [DataMember]
         public string People { get; set; }
+
+        [DataMember]
+        public int Count { get; set; }
     }
 }

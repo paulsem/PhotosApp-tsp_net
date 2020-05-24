@@ -1,5 +1,5 @@
 ﻿@page
-@model WebApplication1.Pages.ShowDataModel
+@model WebApplication1.Pages.ShowDataModel 
 @{
     ViewData["Title"] = "ShowData";
 }
@@ -12,9 +12,9 @@
     </p>
 </form>
 <div style="background-color:black;color:white;padding:0px;">
-    
+
     @foreach (var item in Model.Details)
-    {   
+    {
         <div style="display:inline-block;padding:10px">
             <div>
                 <img src="@item.Path" alt="Image" style="height:200px;width:200px;">
@@ -39,7 +39,12 @@
 
             </div>
         </div>
-     }
+    }
+    <div>     
+        <p style="display:inline-block;">Count:</p>
+        <p style="display:inline-block;">@ShowDataModel.aparitii</p>
+
+    </div>
 </div>
 <!--
 <table>
