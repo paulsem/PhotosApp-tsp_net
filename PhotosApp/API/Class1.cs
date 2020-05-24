@@ -198,6 +198,32 @@ namespace PhotosApp
 
             }
         }
+        public static List<String> getAllDetails()
+        {
+            using (Model1Container context = new Model1Container())
+            {
+                var photo = (from s in context.Photos
+                             join sa in context.People on s.Id equals sa.PhotoId
+                             select s).ToList();
+
+                List<string> photos = new List<string>();
+                string aux = "";
+                foreach (var items in photo)
+                {
+                    photos.Add(items.Path);
+                    photos.Add(items.Locatie);
+                    photos.Add(items.Anotimp);
+                    photos.Add(Convert.ToString(items.Data));
+                    foreach (var x in items.People)
+                        aux += " " + x.Nume;
+                    photos.Add(aux);
+                }
+                return photos;
+
+            }
+
+
+        }
 
     }
 }

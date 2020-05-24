@@ -36,6 +36,9 @@ namespace ServiceReference1
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/getPaths", ReplyAction="http://tempuri.org/InterfacePhotosApp/getPathsResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<string>> getPathsAsync(string a);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/getAllDetails", ReplyAction="http://tempuri.org/InterfacePhotosApp/getAllDetailsResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<string>> getAllDetailsAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
@@ -121,6 +124,11 @@ namespace ServiceReference1
         public System.Threading.Tasks.Task<System.Collections.Generic.List<string>> getPathsAsync(string a)
         {
             return base.Channel.getPathsAsync(a);
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<string>> getAllDetailsAsync()
+        {
+            return base.Channel.getAllDetailsAsync();
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

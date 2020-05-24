@@ -1,0 +1,91 @@
+﻿@page
+@model WebApplication1.Pages.ShowDataModel
+@{
+    ViewData["Title"] = "ShowData";
+}
+
+<h1>ShowData</h1>
+<form>
+    <p>
+        <input type="text" placeholder="Nume/Anotimp/Locatie" asp-for="SearchString" />
+        <input type="submit" value="Search" />
+    </p>
+</form>
+<div style="background-color:black;color:white;padding:0px;">
+    
+    @foreach (var item in Model.Details)
+    {   
+        <div style="display:inline-block;padding:10px">
+            <div>
+                <img src="@item.Path" alt="Image" style="height:200px;width:200px;">
+            </div>
+            <div>
+                <p style="display:inline-block;">Path:</p>
+                <p style="display:inline-block;">@Html.DisplayFor(modelItem => item.Path)</p>
+            </div>
+            <div>
+                <p style="display:inline-block;">Locatie:</p>
+                <p style="display:inline-block;">@Html.DisplayFor(modelItem => item.Locatie)</p>
+
+            </div>
+            <div>
+                <p style="display:inline-block;">Anotimp:</p>
+                <p style="display:inline-block;">@Html.DisplayFor(modelItem => item.Anotimp)</p>
+
+            </div>
+            <div>
+                <p style="display:inline-block;">People:</p>
+                <p style="display:inline-block;">@Html.DisplayFor(modelItem => item.People)</p>
+
+            </div>
+        </div>
+     }
+</div>
+<!--
+<table>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Details[0].Path)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Details[0].Locatie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Details[0].Anotimp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Details[0].People)
+            </th>
+            <th>
+                Imagine
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Details)
+        {
+            <tr style="font-size:small">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Path)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Locatie)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Anotimp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.People)
+                </td>    
+                <td>
+                    <img src="@item.Path" alt="Image" style="height:50px;width:50px;">
+                </td>
+            </tr>
+            
+        }
+    </tbody>
+
+</table>
+-->

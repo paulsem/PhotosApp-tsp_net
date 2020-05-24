@@ -21,6 +21,7 @@ namespace ObjectWCF
         [OperationContract] List<string> getDetails(string a);
 
         [OperationContract] List<string> getPaths(string a);
+        [OperationContract] List<string> getAllDetails();
     }
 
 }

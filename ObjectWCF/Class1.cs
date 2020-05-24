@@ -43,5 +43,9 @@ namespace ObjectWCF
         {
             Class1.updateDetails(a, b, c, data, x);
         }
+        List<string> InterfacePhotosApp.getAllDetails()
+        {
+            return Class1.getAllDetails();
+        }
     }
 }

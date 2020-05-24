@@ -8,54 +8,62 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+
+
 using System.Collections.Generic;
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.ServiceContractAttribute(ConfigurationName="InterfacePhotosApp")]
+[System.ServiceModel.ServiceContractAttribute(ConfigurationName = "InterfacePhotosApp")]
 public interface InterfacePhotosApp
 {
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/addDetails", ReplyAction="http://tempuri.org/InterfacePhotosApp/addDetailsResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/addDetails", ReplyAction = "http://tempuri.org/InterfacePhotosApp/addDetailsResponse")]
     void addDetails(string a, string b, string c, System.DateTime data, string[] x);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/addDetails", ReplyAction="http://tempuri.org/InterfacePhotosApp/addDetailsResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/addDetails", ReplyAction = "http://tempuri.org/InterfacePhotosApp/addDetailsResponse")]
     System.Threading.Tasks.Task addDetailsAsync(string a, string b, string c, System.DateTime data, string[] x);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/checkPath", ReplyAction="http://tempuri.org/InterfacePhotosApp/checkPathResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/checkPath", ReplyAction = "http://tempuri.org/InterfacePhotosApp/checkPathResponse")]
     bool checkPath(string a);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/checkPath", ReplyAction="http://tempuri.org/InterfacePhotosApp/checkPathResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/checkPath", ReplyAction = "http://tempuri.org/InterfacePhotosApp/checkPathResponse")]
     System.Threading.Tasks.Task<bool> checkPathAsync(string a);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/insertNewImage", ReplyAction="http://tempuri.org/InterfacePhotosApp/insertNewImageResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/insertNewImage", ReplyAction = "http://tempuri.org/InterfacePhotosApp/insertNewImageResponse")]
     void insertNewImage(string path, string locatie, string anotimp, System.DateTime data, string[] persoane);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/insertNewImage", ReplyAction="http://tempuri.org/InterfacePhotosApp/insertNewImageResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/insertNewImage", ReplyAction = "http://tempuri.org/InterfacePhotosApp/insertNewImageResponse")]
     System.Threading.Tasks.Task insertNewImageAsync(string path, string locatie, string anotimp, System.DateTime data, string[] persoane);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/updateDetails", ReplyAction="http://tempuri.org/InterfacePhotosApp/updateDetailsResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/updateDetails", ReplyAction = "http://tempuri.org/InterfacePhotosApp/updateDetailsResponse")]
     void updateDetails(string a, string b, string c, System.DateTime data, string[] x);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/updateDetails", ReplyAction="http://tempuri.org/InterfacePhotosApp/updateDetailsResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/updateDetails", ReplyAction = "http://tempuri.org/InterfacePhotosApp/updateDetailsResponse")]
     System.Threading.Tasks.Task updateDetailsAsync(string a, string b, string c, System.DateTime data, string[] x);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/deleteDetails", ReplyAction="http://tempuri.org/InterfacePhotosApp/deleteDetailsResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/deleteDetails", ReplyAction = "http://tempuri.org/InterfacePhotosApp/deleteDetailsResponse")]
     void deleteDetails(string a);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/deleteDetails", ReplyAction="http://tempuri.org/InterfacePhotosApp/deleteDetailsResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/deleteDetails", ReplyAction = "http://tempuri.org/InterfacePhotosApp/deleteDetailsResponse")]
     System.Threading.Tasks.Task deleteDetailsAsync(string a);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/getDetails", ReplyAction="http://tempuri.org/InterfacePhotosApp/getDetailsResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/getDetails", ReplyAction = "http://tempuri.org/InterfacePhotosApp/getDetailsResponse")]
     List<string> getDetails(string a);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/getDetails", ReplyAction="http://tempuri.org/InterfacePhotosApp/getDetailsResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/getDetails", ReplyAction = "http://tempuri.org/InterfacePhotosApp/getDetailsResponse")]
     System.Threading.Tasks.Task<List<string>> getDetailsAsync(string a);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/getPaths", ReplyAction="http://tempuri.org/InterfacePhotosApp/getPathsResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/getPaths", ReplyAction = "http://tempuri.org/InterfacePhotosApp/getPathsResponse")]
     List<string> getPaths(string a);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePhotosApp/getPaths", ReplyAction="http://tempuri.org/InterfacePhotosApp/getPathsResponse")]
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/getPaths", ReplyAction = "http://tempuri.org/InterfacePhotosApp/getPathsResponse")]
     System.Threading.Tasks.Task<List<string>> getPathsAsync(string a);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/getAllDetails", ReplyAction = "http://tempuri.org/InterfacePhotosApp/getAllDetailsResponse")]
+    List<string> getAllDetails();
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/InterfacePhotosApp/getAllDetails", ReplyAction = "http://tempuri.org/InterfacePhotosApp/getAllDetailsResponse")]
+    System.Threading.Tasks.Task<List<string>> getAllDetailsAsync();
 }
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -67,98 +75,108 @@ public interface InterfacePhotosAppChannel : InterfacePhotosApp, System.ServiceM
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
 public partial class InterfacePhotosAppClient : System.ServiceModel.ClientBase<InterfacePhotosApp>, InterfacePhotosApp
 {
-    
+
     public InterfacePhotosAppClient()
     {
     }
-    
-    public InterfacePhotosAppClient(string endpointConfigurationName) : 
+
+    public InterfacePhotosAppClient(string endpointConfigurationName) :
             base(endpointConfigurationName)
     {
     }
-    
-    public InterfacePhotosAppClient(string endpointConfigurationName, string remoteAddress) : 
+
+    public InterfacePhotosAppClient(string endpointConfigurationName, string remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public InterfacePhotosAppClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public InterfacePhotosAppClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public InterfacePhotosAppClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public InterfacePhotosAppClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(binding, remoteAddress)
     {
     }
-    
+
     public void addDetails(string a, string b, string c, System.DateTime data, string[] x)
     {
         base.Channel.addDetails(a, b, c, data, x);
     }
-    
+
     public System.Threading.Tasks.Task addDetailsAsync(string a, string b, string c, System.DateTime data, string[] x)
     {
         return base.Channel.addDetailsAsync(a, b, c, data, x);
     }
-    
+
     public bool checkPath(string a)
     {
         return base.Channel.checkPath(a);
     }
-    
+
     public System.Threading.Tasks.Task<bool> checkPathAsync(string a)
     {
         return base.Channel.checkPathAsync(a);
     }
-    
+
     public void insertNewImage(string path, string locatie, string anotimp, System.DateTime data, string[] persoane)
     {
         base.Channel.insertNewImage(path, locatie, anotimp, data, persoane);
     }
-    
+
     public System.Threading.Tasks.Task insertNewImageAsync(string path, string locatie, string anotimp, System.DateTime data, string[] persoane)
     {
         return base.Channel.insertNewImageAsync(path, locatie, anotimp, data, persoane);
     }
-    
+
     public void updateDetails(string a, string b, string c, System.DateTime data, string[] x)
     {
         base.Channel.updateDetails(a, b, c, data, x);
     }
-    
+
     public System.Threading.Tasks.Task updateDetailsAsync(string a, string b, string c, System.DateTime data, string[] x)
     {
         return base.Channel.updateDetailsAsync(a, b, c, data, x);
     }
-    
+
     public void deleteDetails(string a)
     {
         base.Channel.deleteDetails(a);
     }
-    
+
     public System.Threading.Tasks.Task deleteDetailsAsync(string a)
     {
         return base.Channel.deleteDetailsAsync(a);
     }
-    
+
     public List<string> getDetails(string a)
     {
         return base.Channel.getDetails(a);
     }
-    
+
     public System.Threading.Tasks.Task<List<string>> getDetailsAsync(string a)
     {
         return base.Channel.getDetailsAsync(a);
     }
-    
+
     public List<string> getPaths(string a)
     {
         return base.Channel.getPaths(a);
     }
-    
+
     public System.Threading.Tasks.Task<List<string>> getPathsAsync(string a)
     {
         return base.Channel.getPathsAsync(a);
+    }
+
+    public List<string> getAllDetails()
+    {
+        return base.Channel.getAllDetails();
+    }
+
+    public System.Threading.Tasks.Task<List<string>> getAllDetailsAsync()
+    {
+        return base.Channel.getAllDetailsAsync();
     }
 }
