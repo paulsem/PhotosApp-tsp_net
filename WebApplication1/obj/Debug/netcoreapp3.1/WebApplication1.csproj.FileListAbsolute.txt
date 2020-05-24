@@ -128,3 +128,4 @@ C:\Users\Paul\source\repos\PhotosApp\WebApplication1\bin\Debug\netcoreapp3.1\run
 C:\Users\Paul\source\repos\PhotosApp\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\win\native\grpc_csharp_ext.x86.dll
 C:\Users\Paul\source\repos\PhotosApp\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\Paul\source\repos\PhotosApp\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Paul\source\repos\PhotosApp\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Pages\Properties.cshtml.g.cs
